@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "w1QR9fIkOd0=",
+  "dgSpecHash": "yOGhXTf+wC0=",
   "success": true,
-  "projectFilePath": "D:\\ProVisa\\VisaPro-Backend\\Business\\Business.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Visa Pro\\Business\\Business.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vidaz\\.nuget\\packages\\microsoft.net.sdk.compilers.toolset\\9.0.304\\microsoft.net.sdk.compilers.toolset.9.0.304.nupkg.sha512"
+  ],
   "logs": []
 }

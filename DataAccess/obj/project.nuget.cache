@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZHKZvk3+ZPY=",
+  "dgSpecHash": "59y5qf4Mjn4=",
   "success": true,
-  "projectFilePath": "D:\\ProVisa\\VisaPro-Backend\\DataAccess\\DataAccess.csproj",
+  "projectFilePath": "D:\\Visa Pro\\DataAccess\\DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vidaz\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.8\\microsoft.entityframeworkcore.9.0.8.nupkg.sha512",
     "C:\\Users\\vidaz\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.8\\microsoft.entityframeworkcore.abstractions.9.0.8.nupkg.sha512",
@@ -14,7 +14,8 @@
     "C:\\Users\\vidaz\\.nuget\\packages\\microsoft.extensions.logging\\9.0.8\\microsoft.extensions.logging.9.0.8.nupkg.sha512",
     "C:\\Users\\vidaz\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.8\\microsoft.extensions.logging.abstractions.9.0.8.nupkg.sha512",
     "C:\\Users\\vidaz\\.nuget\\packages\\microsoft.extensions.options\\9.0.8\\microsoft.extensions.options.9.0.8.nupkg.sha512",
-    "C:\\Users\\vidaz\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.8\\microsoft.extensions.primitives.9.0.8.nupkg.sha512"
+    "C:\\Users\\vidaz\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.8\\microsoft.extensions.primitives.9.0.8.nupkg.sha512",
+    "C:\\Users\\vidaz\\.nuget\\packages\\microsoft.net.sdk.compilers.toolset\\9.0.304\\microsoft.net.sdk.compilers.toolset.9.0.304.nupkg.sha512"
   ],
   "logs": []
 }

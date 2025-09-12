@@ -681,11 +681,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ProVisa\\VisaPro-Backend\\WebApi\\WebApi.csproj",
+      "projectUniqueName": "D:\\Visa Pro\\WebApi\\WebApi.csproj",
       "projectName": "WebApi",
-      "projectPath": "D:\\ProVisa\\VisaPro-Backend\\WebApi\\WebApi.csproj",
+      "projectPath": "D:\\Visa Pro\\WebApi\\WebApi.csproj",
       "packagesPath": "C:\\Users\\vidaz\\.nuget\\packages\\",
-      "outputPath": "D:\\ProVisa\\VisaPro-Backend\\WebApi\\obj\\",
+      "outputPath": "D:\\Visa Pro\\WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -705,11 +705,11 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "D:\\ProVisa\\VisaPro-Backend\\Domain\\Domain.csproj": {
-              "projectPath": "D:\\ProVisa\\VisaPro-Backend\\Domain\\Domain.csproj"
+            "D:\\Visa Pro\\Domain\\Domain.csproj": {
+              "projectPath": "D:\\Visa Pro\\Domain\\Domain.csproj"
             },
-            "D:\\ProVisa\\VisaPro-Backend\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "D:\\ProVisa\\VisaPro-Backend\\Infrastructure\\Infrastructure.csproj"
+            "D:\\Visa Pro\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "D:\\Visa Pro\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }
@@ -746,6 +746,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.Net.Sdk.Compilers.Toolset",
+            "version": "[9.0.304, 9.0.304]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"

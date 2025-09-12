@@ -1,0 +1,22 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.iml
+
+# Build output
+**/bin/
+**/obj/
+**/Debug/
+**/Release/
+**/x64/
+**/x86/
+**/out/
+
+# VS Code
+.vscode/
+
+# Others
+*.log
+.fake

@@ -560,11 +560,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ProVisa\\VisaPro-Backend\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "D:\\Visa Pro\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "D:\\ProVisa\\VisaPro-Backend\\DataAccess\\DataAccess.csproj",
+      "projectPath": "D:\\Visa Pro\\DataAccess\\DataAccess.csproj",
       "packagesPath": "C:\\Users\\vidaz\\.nuget\\packages\\",
-      "outputPath": "D:\\ProVisa\\VisaPro-Backend\\DataAccess\\obj\\",
+      "outputPath": "D:\\Visa Pro\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -584,8 +584,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "D:\\ProVisa\\VisaPro-Backend\\Domain\\Domain.csproj": {
-              "projectPath": "D:\\ProVisa\\VisaPro-Backend\\Domain\\Domain.csproj"
+            "D:\\Visa Pro\\Domain\\Domain.csproj": {
+              "projectPath": "D:\\Visa Pro\\Domain\\Domain.csproj"
             }
           }
         }
@@ -622,6 +622,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.Net.Sdk.Compilers.Toolset",
+            "version": "[9.0.304, 9.0.304]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
