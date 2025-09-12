@@ -1,0 +1,6 @@
+@VisaPro_HostAddress = http://localhost:5070
+
+GET {{VisaPro_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
