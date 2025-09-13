@@ -17,7 +17,7 @@ namespace Domain.Entity
 
 
         public Guid ApplicationTypeId { get; set; }
-        public ApplicationType ApplicationType { get; set; } = default!;
+        public VisaType ApplicationType { get; set; } = default!;
 
         [MaxLength(2)]
         public string CountryCode { get; set; } = "CA";

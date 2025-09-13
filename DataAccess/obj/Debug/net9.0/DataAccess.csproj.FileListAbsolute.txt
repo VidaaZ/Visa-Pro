@@ -14,3 +14,5 @@ D:\Visa Pro\DataAccess\obj\Debug\net9.0\DataAccess.dll
 D:\Visa Pro\DataAccess\obj\Debug\net9.0\refint\DataAccess.dll
 D:\Visa Pro\DataAccess\obj\Debug\net9.0\DataAccess.pdb
 D:\Visa Pro\DataAccess\obj\Debug\net9.0\ref\DataAccess.dll
+D:\Visa Pro\DataAccess\bin\Debug\net9.0\DataAccess.runtimeconfig.json
+D:\Visa Pro\DataAccess\obj\Debug\net9.0\DataAccess.genruntimeconfig.cache
