@@ -19,9 +19,6 @@ namespace Domain.Entity
         [Required, MaxLength(50)]
         public string RegistrationNo { get; set; }
 
-        [Required, MaxLength(50)]
-        public string TaxId { get; set; }
-
         [Required, MaxLength(300)]
         public string Address { get; set; }
 

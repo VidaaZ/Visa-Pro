@@ -3,6 +3,12 @@
   "WorkspaceRootPath": "D:\\Visa Pro\\WebApi\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8B54F46E-C3F6-43BD-A237-204C5E90122F}|..\\Domain\\Domain.csproj|d:\\visa pro\\domain\\entity\\agency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6B2706E-DA5E-4CF2-B8AD-C759BE04AEED}|..\\DataAccess\\DataAccess.csproj|d:\\visa pro\\dataaccess\\migrations\\20250913192731_addentitiestodb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E6B2706E-DA5E-4CF2-B8AD-C759BE04AEED}|..\\DataAccess\\DataAccess.csproj|d:\\visa pro\\dataaccess\\applicationdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -51,9 +57,6 @@
       "AbsoluteMoniker": "D:0:0:{8B54F46E-C3F6-43BD-A237-204C5E90122F}|..\\Domain\\Domain.csproj|d:\\visa pro\\domain\\entity\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8B54F46E-C3F6-43BD-A237-204C5E90122F}|..\\Domain\\Domain.csproj|d:\\visa pro\\domain\\entity\\agency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D1037A80-D37F-409B-823F-5348BF23FBA2}|..\\Business\\Business.csproj|d:\\visa pro\\business\\appservicecontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -89,6 +92,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "20250913192731_addEntitiesToDb.cs",
+              "DocumentMoniker": "D:\\Visa Pro\\DataAccess\\Migrations\\20250913192731_addEntitiesToDb.cs",
+              "RelativeDocumentMoniker": "..\\DataAccess\\Migrations\\20250913192731_addEntitiesToDb.cs",
+              "ToolTip": "D:\\Visa Pro\\DataAccess\\Migrations\\20250913192731_addEntitiesToDb.cs",
+              "RelativeToolTip": "..\\DataAccess\\Migrations\\20250913192731_addEntitiesToDb.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T19:27:32.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "AppDataAccessContainer.cs",
               "DocumentMoniker": "D:\\Visa Pro\\DataAccess\\AppDataAccessContainer.cs",
               "RelativeDocumentMoniker": "..\\DataAccess\\AppDataAccessContainer.cs",
@@ -101,7 +117,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "Agency.cs",
+              "DocumentMoniker": "D:\\Visa Pro\\Domain\\Entity\\Agency.cs",
+              "RelativeDocumentMoniker": "..\\Domain\\Entity\\Agency.cs",
+              "ToolTip": "D:\\Visa Pro\\Domain\\Entity\\Agency.cs*",
+              "RelativeToolTip": "..\\Domain\\Entity\\Agency.cs*",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAowBsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-12T17:23:05.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Visa Pro\\WebApi\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -114,7 +143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ApplicationDbContextFactory.cs",
               "DocumentMoniker": "D:\\Visa Pro\\DataAccess\\ApplicationDbContextFactory.cs",
               "RelativeDocumentMoniker": "..\\DataAccess\\ApplicationDbContextFactory.cs",
@@ -127,7 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\Visa Pro\\WebApi\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
@@ -140,7 +169,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Party.cs",
               "DocumentMoniker": "D:\\Visa Pro\\Domain\\Entity\\Party.cs",
               "RelativeDocumentMoniker": "..\\Domain\\Entity\\Party.cs",
@@ -153,7 +182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "UserParty.cs",
               "DocumentMoniker": "D:\\Visa Pro\\Domain\\Entity\\UserParty.cs",
               "RelativeDocumentMoniker": "..\\Domain\\Entity\\UserParty.cs",
@@ -166,7 +195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\Visa Pro\\Domain\\Entity\\User.cs",
               "RelativeDocumentMoniker": "..\\Domain\\Entity\\User.cs",
@@ -179,7 +208,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Visa Pro\\WebApi\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -192,7 +221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "VisaApplication.cs",
               "DocumentMoniker": "D:\\Visa Pro\\Domain\\Entity\\VisaApplication.cs",
               "RelativeDocumentMoniker": "..\\Domain\\Entity\\VisaApplication.cs",
@@ -205,7 +234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Domain.csproj",
               "DocumentMoniker": "D:\\Visa Pro\\Domain\\Domain.csproj",
               "RelativeDocumentMoniker": "..\\Domain\\Domain.csproj",
@@ -218,7 +247,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Legal.cs",
               "DocumentMoniker": "D:\\Visa Pro\\Domain\\Entity\\Legal.cs",
               "RelativeDocumentMoniker": "..\\Domain\\Entity\\Legal.cs",
@@ -231,7 +260,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "VisaType.cs",
               "DocumentMoniker": "D:\\Visa Pro\\Domain\\Entity\\VisaType.cs",
               "RelativeDocumentMoniker": "..\\Domain\\Entity\\VisaType.cs",
@@ -244,7 +273,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "D:\\Visa Pro\\DataAccess\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "..\\DataAccess\\Data\\ApplicationDbContext.cs",
@@ -257,7 +286,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "PartyType.cs",
               "DocumentMoniker": "D:\\Visa Pro\\Domain\\Enums\\PartyType.cs",
               "RelativeDocumentMoniker": "..\\Domain\\Enums\\PartyType.cs",
@@ -270,7 +299,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "Individual.cs",
               "DocumentMoniker": "D:\\Visa Pro\\Domain\\Entity\\Individual.cs",
               "RelativeDocumentMoniker": "..\\Domain\\Entity\\Individual.cs",
@@ -283,7 +312,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "Country.cs",
               "DocumentMoniker": "D:\\Visa Pro\\Domain\\Entity\\Country.cs",
               "RelativeDocumentMoniker": "..\\Domain\\Entity\\Country.cs",
@@ -296,20 +325,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Agency.cs",
-              "DocumentMoniker": "D:\\Visa Pro\\Domain\\Entity\\Agency.cs",
-              "RelativeDocumentMoniker": "..\\Domain\\Entity\\Agency.cs",
-              "ToolTip": "D:\\Visa Pro\\Domain\\Entity\\Agency.cs",
-              "RelativeToolTip": "..\\Domain\\Entity\\Agency.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAIBQwEsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T17:23:05.578Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "AppServiceContainer.cs",
               "DocumentMoniker": "D:\\Visa Pro\\Business\\AppServiceContainer.cs",
               "RelativeDocumentMoniker": "..\\Business\\AppServiceContainer.cs",
@@ -322,7 +338,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Notification.cs",
               "DocumentMoniker": "D:\\Visa Pro\\Domain\\Entity\\Notification\\Notification.cs",
               "RelativeDocumentMoniker": "..\\Domain\\Entity\\Notification\\Notification.cs",
@@ -335,7 +351,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Status.cs",
               "DocumentMoniker": "D:\\Visa Pro\\Domain\\Enums\\Status.cs",
               "RelativeDocumentMoniker": "..\\Domain\\Enums\\Status.cs",
@@ -348,7 +364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "Profile.cs",
               "DocumentMoniker": "D:\\Visa Pro\\Domain\\Entity\\Profile\\Profile.cs",
               "RelativeDocumentMoniker": "..\\Domain\\Entity\\Profile\\Profile.cs",
