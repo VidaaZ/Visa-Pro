@@ -1,22 +1,67 @@
+# -----------------
 # Visual Studio
+# -----------------
 .vs/
+*.vsidx
 *.suo
 *.user
 *.userosscache
 *.sln.iml
 
-# Build output
-**/bin/
-**/obj/
-**/Debug/
-**/Release/
-**/x64/
-**/x86/
-**/out/
+# -----------------
+# Build outputs
+# -----------------
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+[Ll]og/
+out/
 
+# -----------------
 # VS Code
+# -----------------
 .vscode/
 
+# -----------------
 # Others
+# -----------------
 *.log
-.fake
+*.tmp
+*.cache
+*.fake
+*.dll
+*.pdb
+
+# -----------------
+# Packages
+# -----------------
+*.nupkg
+*.snupkg
+*.nuspec
+packages/
+*.PackageReference.props
+*.PackageReference.targets
+
+# -----------------
+# Rider / Resharper
+# -----------------
+.idea/
+*.sln.DotSettings.user
+_ReSharper.Caches/
+
+# -----------------
+# Entity Framework
+# -----------------
+Migrations/
+
+# -----------------
+# OS Files
+# -----------------
+.DS_Store
+Thumbs.db
+ehthumbs.db
