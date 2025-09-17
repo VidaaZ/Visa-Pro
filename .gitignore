@@ -6,6 +6,7 @@
 *.suo
 *.user
 *.userosscache
+*.sln.docstates
 *.sln.iml
 
 # -----------------
