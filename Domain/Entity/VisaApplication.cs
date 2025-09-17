@@ -13,7 +13,7 @@ namespace Domain.Entity
 
 
         public Guid UserId { get; set; }
-        public ApplicationUser User { get; set; } = default!;
+       
 
 
         public Guid ApplicationTypeId { get; set; }
@@ -24,13 +24,13 @@ namespace Domain.Entity
 
 
         public Guid? AssignedOfficerUserId { get; set; }
-        public ApplicationUser? AssignedOfficerUser { get; set; }
+      
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public DateTime? SubmittedAt { get; set; }
         public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 
-        public ICollection<Document> Documents { get; set; } = new List<Document>();
+     
         public ICollection<Payment> Payments { get; set; } = new List<Payment>();
         public ICollection<Appointment> Appointments { get; set; } = new List<Appointment>();
 

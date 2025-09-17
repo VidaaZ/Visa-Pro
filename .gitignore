@@ -1,22 +1,65 @@
+# ----------------------
 # Visual Studio
+# ----------------------
 .vs/
 *.suo
 *.user
 *.userosscache
+*.sln.docstates
 *.sln.iml
 
+# ----------------------
 # Build output
-**/bin/
-**/obj/
-**/Debug/
-**/Release/
-**/x64/
-**/x86/
-**/out/
+# ----------------------
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+[Bb]uild/
+out/
 
+# NuGet
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ----------------------
 # VS Code
+# ----------------------
 .vscode/
 
+# ----------------------
 # Others
+# ----------------------
 *.log
-.fake
+*.tlog
+*.cache
+*.dll
+*.exe
+*.pdb
+*.dbmdl
+*.bak
+*.ldf
+*.mdf
+
+# User secrets / configs
+secrets.json
+appsettings.*.json
+
+# Test results
+TestResult*/
+[Bb]uild[Ll]og.*
+
+# Rider / JetBrains
+.idea/
+
+# Node (if frontend exists)
+node_modules/
+npm-debug.log
+yarn-error.log
