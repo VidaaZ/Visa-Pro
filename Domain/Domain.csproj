@@ -7,11 +7,44 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Dto\" />
-    <Folder Include="Mapper\" />
-    <Folder Include="ViewModel\" />
-    <Folder Include="Service\" />
-    <Folder Include="Repository\" />
+    <Compile Remove="Dto\**" />
+    <Compile Remove="Entity\Appointment\**" />
+    <Compile Remove="Entity\Document\**" />
+    <Compile Remove="Entity\Notification\**" />
+    <Compile Remove="Entity\Payment\**" />
+    <Compile Remove="Entity\Profile\**" />
+    <Compile Remove="Mapper\**" />
+    <Compile Remove="Repository\**" />
+    <Compile Remove="Service\**" />
+    <Compile Remove="ViewModel\**" />
+    <EmbeddedResource Remove="Dto\**" />
+    <EmbeddedResource Remove="Entity\Appointment\**" />
+    <EmbeddedResource Remove="Entity\Document\**" />
+    <EmbeddedResource Remove="Entity\Notification\**" />
+    <EmbeddedResource Remove="Entity\Payment\**" />
+    <EmbeddedResource Remove="Entity\Profile\**" />
+    <EmbeddedResource Remove="Mapper\**" />
+    <EmbeddedResource Remove="Repository\**" />
+    <EmbeddedResource Remove="Service\**" />
+    <EmbeddedResource Remove="ViewModel\**" />
+    <None Remove="Dto\**" />
+    <None Remove="Entity\Appointment\**" />
+    <None Remove="Entity\Document\**" />
+    <None Remove="Entity\Notification\**" />
+    <None Remove="Entity\Payment\**" />
+    <None Remove="Entity\Profile\**" />
+    <None Remove="Mapper\**" />
+    <None Remove="Repository\**" />
+    <None Remove="Service\**" />
+    <None Remove="ViewModel\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Entity\VisaApplication.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.9" />
   </ItemGroup>
 
 </Project>

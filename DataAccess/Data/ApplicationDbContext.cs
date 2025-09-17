@@ -1,4 +1,5 @@
 ﻿using Domain.Entity;
+using Domain.Enums;
 using Microsoft.EntityFrameworkCore;
 
 namespace DataAccess.Data
@@ -6,76 +7,50 @@ namespace DataAccess.Data
     public class ApplicationDbContext : DbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
-  : base(options)
-        {
-        }
-        public DbSet<ApplicationUser> Users => Set<ApplicationUser>();
-        public DbSet<Profile> Profiles => Set<Profile>();
-        public DbSet<ApplicationType> ApplicationTypes => Set<ApplicationType>();
-        public DbSet<VisaApplication> VisaApplications => Set<VisaApplication>();
-        public DbSet<Document> Documents => Set<Document>();
-        public DbSet<Payment> Payments => Set<Payment>();
-        public DbSet<Appointment> Appointments => Set<Appointment>();
-        public DbSet<Notification> Notifications => Set<Notification>();
+            : base(options) { }
+
+        public DbSet<Agency> Agencies => Set<Agency>();
+        public DbSet<Country> Countries => Set<Country>();
+        public DbSet<Party> Parties => Set<Party>();
+        public DbSet<Individual> Individuals => Set<Individual>();
+        public DbSet<Legal> Legals => Set<Legal>();
+        public DbSet<User> Users => Set<User>();
+        public DbSet<UserParty> UserParties => Set<UserParty>();
+        public DbSet<VisaType> VisaTypes => Set<VisaType>();
 
         protected override void OnModelCreating(ModelBuilder b)
         {
+            b.Entity<Party>()
+                .HasDiscriminator<PartyType>(p => p.Type)
+                .HasValue<Individual>(PartyType.Individual)
+                .HasValue<Legal>(PartyType.Legal);
 
-            b.Entity<ApplicationUser>()
-                .HasOne(u => u.Profile)
-                .WithOne(p => p.User)
-                .HasForeignKey<Profile>(p => p.UserId)
-                .OnDelete(DeleteBehavior.Cascade);
-
-
-            b.Entity<VisaApplication>()
-                .HasOne(v => v.User)
-                .WithMany(u => u.VisaApplications)
-                .HasForeignKey(v => v.UserId)
+            b.Entity<Agency>()
+                .HasOne(a => a.Country)
+                .WithMany()
+                .HasForeignKey(a => a.CountryId)
                 .OnDelete(DeleteBehavior.Restrict);
 
+            b.Entity<UserParty>()
+                .HasKey(up => new { up.UserId, up.PartyId });
 
-            b.Entity<VisaApplication>()
-                .HasOne(v => v.ApplicationType)
-                .WithMany(t => t.VisaApplications)
-                .HasForeignKey(v => v.ApplicationTypeId)
-                .OnDelete(DeleteBehavior.Restrict);
-
-
-            b.Entity<VisaApplication>()
-                .HasOne(v => v.AssignedOfficerUser)
-                .WithMany()
-                .HasForeignKey(v => v.AssignedOfficerUserId)
-                .OnDelete(DeleteBehavior.SetNull);
-
-
-            b.Entity<Document>()
-                .HasOne(d => d.VerifiedByUser)
-                .WithMany()
-                .HasForeignKey(d => d.VerifiedByUserId)
-                .OnDelete(DeleteBehavior.SetNull);
-
-
-            b.Entity<Notification>()
-                .HasOne(n => n.User)
-                .WithMany(u => u.Notifications)
-                .HasForeignKey(n => n.UserId)
+            b.Entity<UserParty>()
+                .HasOne(up => up.User)
+                .WithMany(u => u.UserParties)
+                .HasForeignKey(up => up.UserId)
                 .OnDelete(DeleteBehavior.Cascade);
 
+            b.Entity<UserParty>()
+                .HasOne(up => up.Party)
+                .WithMany(p => p.UserParties)
+                .HasForeignKey(up => up.PartyId)
+                .OnDelete(DeleteBehavior.Cascade);
 
-            b.Entity<Notification>()
-                .HasOne(n => n.VisaApplication)
-                .WithMany()
-                .HasForeignKey(n => n.VisaApplicationId)
-                .OnDelete(DeleteBehavior.SetNull);
-
-
-            b.Entity<Payment>()
-                .Property(p => p.Amount)
-                .HasPrecision(18, 2);
+            b.Entity<User>()
+                .HasIndex(u => u.Username)
+                .IsUnique();
 
             base.OnModelCreating(b);
         }
     }
-
 }
