@@ -6,22 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Remove="Dto\**" />
-    <Compile Remove="Mapper\**" />
-    <Compile Remove="Repository\**" />
-    <Compile Remove="Service\**" />
-    <Compile Remove="ViewModel\**" />
-    <EmbeddedResource Remove="Dto\**" />
-    <EmbeddedResource Remove="Mapper\**" />
-    <EmbeddedResource Remove="Repository\**" />
-    <EmbeddedResource Remove="Service\**" />
-    <EmbeddedResource Remove="ViewModel\**" />
-    <None Remove="Dto\**" />
-    <None Remove="Mapper\**" />
-    <None Remove="Repository\**" />
-    <None Remove="Service\**" />
-    <None Remove="ViewModel\**" />
-  </ItemGroup>
-
 </Project>
