@@ -37,7 +37,7 @@ namespace WebApi.Controllers.Dashboard.Agency
 
         [HttpPut]
         [Route("update")]
-        public async Task<IActionResult> UpdateAgencyAsync(AgencyRequestViewModel viewModel, int id)
+        public async Task<IActionResult> UpdateAgencyAsync( [FromBody] AgencyRequestViewModel viewModel, int id)
         {
             try
             {
@@ -52,12 +52,12 @@ namespace WebApi.Controllers.Dashboard.Agency
         }
 
         [HttpDelete]
-        [Route("agency-id/{id}")]
+        [Route("delete")]
         public async Task<IActionResult> DeleteAgencyAsync(int id)
         {
             try
             {
-                _agencyService.DeleteAgencyAsync(id);
+                _agencyService.Delete(id);
 
                 return Ok();
             }
@@ -82,5 +82,6 @@ namespace WebApi.Controllers.Dashboard.Agency
                 return BadRequest(ex.Message);
             }
         }
+        
     }
 }

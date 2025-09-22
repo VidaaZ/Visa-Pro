@@ -11,7 +11,7 @@ namespace Business.Service.Agency
 
         public AgencyService(IAgencyRepository agencyRepository)
         {
-           this. _agencyRepository = agencyRepository;
+            this._agencyRepository = agencyRepository;
         }
 
         public async Task<AgencyResponseDto> CreateAgencyAsync(AgencyRequestDto dto)
@@ -35,7 +35,7 @@ namespace Business.Service.Agency
             {
                 var existing = await _agencyRepository.GetByIdAsync(id)
                                ?? throw new KeyNotFoundException("Agency with the specified ID not found.");
-                var updated = await _agencyRepository.UpdateAsync(existing);
+                var updated = await _agencyRepository.UpdateAsync(AgencyMapper.ToEntity(dto), id);
 
                 return AgencyMapper.ToResponseDto(updated);
             }
@@ -58,16 +58,17 @@ namespace Business.Service.Agency
             }
         }
 
-      
 
-        public async Task DeleteAgencyAsync(int id)
+
+        public void Delete(int id)
         {
             try
             {
-                var agency = await _agencyRepository.GetByIdAsync(id)
-                             ?? throw new KeyNotFoundException("Agency with this id is not found.");
+                var agency =  _agencyRepository.GetByIdAsync(id).Result;
+                if (agency is null)
+                    throw new KeyNotFoundException("Agency with this id is not found.");
 
-                await _agencyRepository.DeleteAsync(agency);
+                 _agencyRepository.Delete(agency);
             }
             catch (Exception ex)
             {

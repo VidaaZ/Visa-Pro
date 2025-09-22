@@ -7,6 +7,6 @@ namespace Domain.Service.Agency
         Task<AgencyResponseDto> CreateAgencyAsync(AgencyRequestDto dto);
         Task<IEnumerable<AgencyResponseDto>> GetAgenciesAsync();
         Task<AgencyResponseDto> UpdateAgencyAsync(AgencyRequestDto dto, int id);
-        Task DeleteAgencyAsync(int id);
+        void Delete(int id);
     }
 }

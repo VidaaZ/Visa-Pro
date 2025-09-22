@@ -7,7 +7,7 @@ namespace Domain.Repository.Agency
         Task<Entity.Agency> CreateAsync(Entity.Agency agency);
         Task<Entity.Agency?> GetByIdAsync(int id);
         Task<IEnumerable<Entity.Agency>> GetAllAsync();
-        Task<Entity.Agency> UpdateAsync(Entity.Agency agency);
-        Task DeleteAsync(Entity.Agency agency);
+        Task<Entity.Agency> UpdateAsync(Entity.Agency agency,int id);
+         void Delete(Entity.Agency agency);
     }
 }
