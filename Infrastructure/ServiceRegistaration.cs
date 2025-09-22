@@ -1,7 +1,11 @@
-﻿using Business.Service.Agency;
+﻿using Business.Service.Admin;
+using Business.Service.Agency;
 using DataAccess;
+using DataAccess.Repository.Admin;
 using DataAccess.Repository.Agency;
+using Domain.Repository;
 using Domain.Repository.Agency;
+using Domain.Service;
 using Domain.Service.Agency;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -16,6 +20,8 @@ namespace Infrastructure
             services.AddApplicationServices();
 
             services.AddScoped<IAgencyService, AgencyService>();
+            services.AddScoped<IAdminService, AdminService>();
+            services.AddScoped<IAdminRepository, AdminRepository>();
             services.AddScoped<IAgencyRepository, AgencyRepository>();
 
 
