@@ -1,12 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Business.Service.Agency;
+using Domain.Service.Agency;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Business
 {
-    class AppServiceContainer
+  public static class AppServiceContainer
     {
+        public static void AddApplicationServices(this IServiceCollection services)
+        {
+            services.AddScoped<IAgencyService, AgencyService>();
+        }
     }
 }

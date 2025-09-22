@@ -1,12 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DataAccess.Repository.Agency;
+using Domain.Repository.Agency;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace DataAccess
 {
-    class AppRepositoryContainer
+    public static class AppRepositoryContainer
     {
+        public static void AddApplicationServices(this IServiceCollection services)
+        {
+            services.AddScoped<IAgencyRepository, AgencyRepository>();
+        }
     }
 }
