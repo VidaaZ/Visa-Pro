@@ -9,7 +9,7 @@ namespace Domain.Entity
         [Required]
         public string Username { get; set; }
         public string PasswordHash { get; set; }
-        public ICollection<UserParty> UserParties { get; set; } //n to n
-
+        public bool IsActive { get; set; }
+        public ICollection<UserParty> UserParties { get; set; }
     }
 }

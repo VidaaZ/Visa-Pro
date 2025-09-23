@@ -15,7 +15,6 @@ namespace WebApi.Controllers.Dashboard.Agency
         public AgencyController(IAgencyService agencyService)
         {
             this._agencyService = agencyService;
-
         }
 
         [HttpPost]
