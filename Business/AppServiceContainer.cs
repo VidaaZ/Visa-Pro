@@ -12,6 +12,7 @@ namespace Business
         {
             services.AddScoped<IAgencyService, AgencyService>();
             services.AddScoped<IAdminService, AdminService>();
+            services.AddScoped<IAuthService, IAuthService>();
         }
     }
 }

@@ -41,7 +41,7 @@ namespace Domain.Mapper
                 IsActive = d.IsActive,
                 CountryId = d.CountryId,
                 CreatedOn = hasCreated ? d.CreatedOn : now,
-                UpdatedOn = hasCreated ? now : null
+                UpdatedOn = hasCreated ? now : null,
             };
         }
 

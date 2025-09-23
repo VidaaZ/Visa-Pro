@@ -57,9 +57,7 @@ namespace Business.Service.Agency
                 throw new InvalidOperationException("An error occurred while fetching agencies.");
             }
         }
-
-
-
+        
         public void Delete(int id)
         {
             try
@@ -67,8 +65,9 @@ namespace Business.Service.Agency
                 var agency =  _agencyRepository.GetByIdAsync(id).Result;
                 if (agency is null)
                     throw new KeyNotFoundException("Agency with this id is not found.");
-
-                 _agencyRepository.Delete(agency);
+                agency.IsActive = false; 
+                
+                _agencyRepository.UpdateAsync(agency, id);
             }
             catch (Exception ex)
             {
