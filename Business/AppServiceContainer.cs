@@ -1,5 +1,6 @@
 ﻿using Business.Service.Admin;
 using Business.Service.Agency;
+using Business.Service.Auth;
 using Domain.Service;
 using Domain.Service.Agency;
 using Microsoft.Extensions.DependencyInjection;
@@ -12,7 +13,7 @@ namespace Business
         {
             services.AddScoped<IAgencyService, AgencyService>();
             services.AddScoped<IAdminService, AdminService>();
-            services.AddScoped<IAuthService, IAuthService>();
+            services.AddScoped<IAuthService, AuthService>();
         }
     }
 }

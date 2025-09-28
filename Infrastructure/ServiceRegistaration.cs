@@ -1,5 +1,6 @@
 ﻿using Business.Service.Admin;
 using Business.Service.Agency;
+using Business.Service.Auth;
 using DataAccess;
 using DataAccess.Repository.Admin;
 using DataAccess.Repository.Agency;
@@ -26,7 +27,7 @@ namespace Infrastructure
             services.AddScoped<IAdminRepository, AdminRepository>();
             services.AddScoped<IAgencyRepository, AgencyRepository>();
             services.AddScoped<IAuthRepository, AuthRepository>();
-            services.AddScoped<IAuthService, IAuthService>();
+            services.AddScoped<IAuthService, AuthService>();
             return services;
         }
     }
